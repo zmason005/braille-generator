@@ -1,0 +1,29 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UEB Braille Cell Generator</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; line-height: 1.5; background: #fafafa; }
+        .card { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        #status { margin: 20px 0; font-weight: bold; color: #007acc; }
+        #progress { width: 100%; background: #eee; height: 10px; border-radius: 5px; overflow: hidden; }
+        #bar { width: 0%; background: #2ea44f; height: 100%; transition: width 0.3s; }
+        button { width: 100%; padding: 12px; background: #21262d; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
+        button:disabled { background: #8b949e; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>5-Cell UEB Generator</h2>
+        <p>This script fetches 370k words, generates prefixes, and outputs Braille cell numbers.</p>
+        <div id="status">Ready</div>
+        <div id="progress"><div id="bar"></div></div>
+        <br>
+        <button id="startBtn">Start Processing</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
